@@ -45,9 +45,9 @@ func main() {
 	}
 	for _, file := range file {
 		if file.Mode().IsRegular() {
-			fmt.Println(file.Mode(), CLR_M, file.Name(), CLR_N, file.Size(), "byte")
+			fmt.Println(file.Mode(), file.ModTime(), file.Size(), "byte", CLR_M, file.Name(), CLR_N)
 		} else {
-			fmt.Println(file.Mode(), CLR_C, file.Name(), CLR_N)
+			fmt.Println(file.Mode(), file.ModTime(), CLR_C, file.Name(), CLR_N)
 		}
 	}
 
