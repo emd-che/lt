@@ -1,2 +1,2 @@
 # lt
-ls clone in Go
+very simple ls clone in Go
